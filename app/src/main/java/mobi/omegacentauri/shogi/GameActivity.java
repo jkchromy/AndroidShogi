@@ -558,7 +558,7 @@ public class GameActivity extends Activity {
   };
 
   private void maybeSaveGame() {
-    if (mDidHumanMove && mPlays.size() > 0) {
+    if (mPlays.size() > 0) {
       TreeMap<String, String> attrs = new TreeMap<String, String>();
       attrs.put(GameLog.ATTR_BLACK_PLAYER, blackPlayerName());
       attrs.put(GameLog.ATTR_WHITE_PLAYER, whitePlayerName());
